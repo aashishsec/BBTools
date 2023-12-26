@@ -13,13 +13,11 @@ get_sudo_password() {
 # Prompt for sudo password at the beginning
 get_sudo_password
 
-
-
 echo $sudo_password | sudo apt update -y
 
 echo $sudo_password | sudo apt upgrade -y
 
-/bin/bash -c "$(curl -sL https://git.io/vokNn)"
+echo $sudo_password | sudo /bin/bash -c "$(curl -sL https://git.io/vokNn)"
 
 # Clone terminal-profile
 echo $sudo_password | sudo -S git clone https://github.com/pixegami/terminal-profile
@@ -62,6 +60,12 @@ go install github.com/tomnomnom/waybackurls@latest
 go install github.com/hakluke/hakrawler@latest
 
 
+cd ~/go/bin
+
+./pdtm  --install-all
+
+cd ~
+
 cd tools
 
 # Clone and install waymore
@@ -77,3 +81,5 @@ cd ..
 # Install Python packages arjun and bbot
 
 pip install arjun bbot
+
+
