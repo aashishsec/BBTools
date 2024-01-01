@@ -1,5 +1,4 @@
 # BBTools
-Certainly! I'll provide a more detailed documentation without displaying the code. 
 
 ---
 
