@@ -59,6 +59,7 @@ go install github.com/tomnomnom/waybackurls@latest
 
 go install github.com/hakluke/hakrawler@latest
 
+go install github.com/tomnomnom/assetfinder@latest
 
 cd ~/go/bin
 
