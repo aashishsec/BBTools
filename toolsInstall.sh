@@ -79,8 +79,17 @@ echo $sudo_password | sudo -S python setup.py install
 
 cd ..
 
-# Install Python packages arjun and bbot
+echo "Install Python packages arjun and bbot..."
 
 pip install arjun bbot
 
+echo "Installing API Security Testing Tools"
+ 
+wget https://raw.githubusercontent.com/aashishsec/APISecTools/main/APITools.sh
+
+chmod +x APITools.sh
+
+./APITools.sh
+
+echo "Installation completed successfully!"
 
